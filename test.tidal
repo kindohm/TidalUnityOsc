@@ -1,0 +1,14 @@
+let pat = "x*16"
+
+d1 $ sound "k*16"
+
+import UnityOsc
+
+asdf <- testStream
+
+asdf $ thing "sphere*16" 
+    # x (scale (-2) 2 $ slow 20.1 $ sine1)
+    # z (scale (-2) 2 $ slow 19.23 $ (0.75 <~) $ sine1)
+    # y (scale 1 2 $ slow 14.1312 sine1)
+    # duration 10
+
